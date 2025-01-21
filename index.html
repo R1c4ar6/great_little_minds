@@ -6,41 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Little Great Minds - Early Childhood School</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Optional: Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Nunito Sans', sans-serif;
-        }
-
-        .hero {
-            background: url('https://via.placeholder.com/1920x600') center center/cover no-repeat;
-            color: white;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero-overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 50px;
-            width: 100%;
-        }
-
-        .section-padding {
-            padding: 60px 0;
-        }
-
-        .footer {
-            background-color: #f8f9fa;
-            padding: 30px 0;
-        }
-    </style>
+    <!-- Google Translate -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- Google Translate -->
+    <div id="google_translate_element"></div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
@@ -52,9 +31,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -91,7 +70,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="https://via.placeholder.com/500x300" class="img-fluid rounded" alt="About Us">
+                    <img src="media/IMG-20220713-WA0006.jpg" class="img-fluid rounded" alt="About Us">
                 </div>
                 <div class="col-md-6">
                     <h2>About Us</h2>
@@ -117,7 +96,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Infant Care">
+                        <img src="media/omar-lopez-vTknj2OxDVg-unsplash.jpg" class="card-img-top" alt="Infant Care">
                         <div class="card-body">
                             <h5 class="card-title">Infant Care (0-1 years)</h5>
                             <p class="card-text">Providing a loving and secure environment for your little ones.</p>
@@ -127,9 +106,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Toddler Program">
+                        <img src="media/ana-klipper-1m2ZCygwVZ4-unsplash.jpg" class="card-img-top"
+                            alt="Toddler Program">
                         <div class="card-body">
-                            <h5 class="card-title">Toddler Program (1-3 years)</h5>
+                            <h5 class="card-title">Toddler Program (1-2 years)</h5>
                             <p class="card-text">Encouraging exploration and developing essential motor skills.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
@@ -137,9 +117,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Preschool">
+                        <img src="media/gabe-pierce-mLqWFEtlIEs-unsplash.jpg" class="card-img-top" alt="Preschool">
                         <div class="card-body">
-                            <h5 class="card-title">Preschool (3-4 years)</h5>
+                            <h5 class="card-title">Preschool (2-3 years)</h5>
                             <p class="card-text">Building the foundation for academic and social success.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
@@ -155,15 +135,7 @@
             <h2 class="text-center mb-5">Gallery</h2>
             <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Gallery Image 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Gallery Image 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Gallery Image 3">
-                    </div>
+                    <!-- Images will be loaded dynamically here -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
                     data-bs-slide="prev">
@@ -243,16 +215,30 @@
             <p class="mb-2">&copy; 2023 Little Great Minds. All rights reserved.</p>
             <div>
                 <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="me-3"><i class="bi bi-twitter-x"></i></a>
                 <a href="#"><i class="bi bi-instagram"></i></a>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS and dependencies (Popper.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <!-- Optional: Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'es,fr,it', // Add languages you want to support
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script src="./jss.js"></script>
 </body>
 
 </html>
