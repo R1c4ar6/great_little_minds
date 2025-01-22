@@ -2,8 +2,12 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.menu-title {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+
 .hero {
-    background: url('media/frank-mckenna-LhOjrOlcLx4-unsplash.jpg') center center/cover no-repeat;
     color: white;
     height: 100vh;
     display: flex;
@@ -17,14 +21,60 @@ body {
     width: 100%;
 }
 
+.hero-title {
+    font-family: 'Caveat', cursive;
+    font-size: 70px;
+}
+
 .section-padding {
     padding: 60px 0;
+}
+
+#about h2, #programs h2, #testimonials h2, #gallery h2, #contact h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+
+#gallery img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#gallery .modal-content {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#gallery .modal-dialog {
+    max-width: 90%;
+    margin: auto;
+}
+
+#testimonials { 
+    background-color: #f4eee7;
+}
+
+
+#testimonials .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+#testimonials .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .footer {
     background-color: #f8f9fa;
     padding: 30px 0;
 }
+
 #google_translate_element {
     position: fixed;
     top: 10px;
